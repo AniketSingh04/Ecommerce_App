@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@300;400&family=Oswald:wght@700&display=swap');
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Lora", serif;
+font-family: "Oswald", sans-serif;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@300;400&family=Oswald:wght@700&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  box-shadow: 0 8px 6px 6px -6px rgb(60, 53, 53) ;
+  text-transform: uppercase;
+  border-bottom: solid gray !important;
+}
+
+.navbar-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #333;
+  padding-top: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.watch-logo{
+  padding-bottom: 5px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.nav-link {
+  font-family:  "Montserrat", sans-serif;
+  font-weight: 400 !important;
+  color: #555;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+/*
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  position: relative;
+}
+
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+ */
+
+/*==================================Footer Style===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+ 
+.footer {
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  );
+  padding: 1.5rem 0;
+  border-top: 1px solid #e7e7e7;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f9f8f8;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #d0e1f3;
+  border-bottom: 1px solid #d0e1f3 ;
+}
+
+.footer .text-center {
+  text-align: center;
+}
+
+.footer .mt-3 {
+  margin-top: 1rem;
+}
+
+/*==================================PageNotFound Style===========================================*/
+.pnf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.pnf-title {
+  font-size: 6rem; /* Adjust size as needed */
+  color: #333; /* Dark text color */
+  margin-bottom: 1rem;
+}
+
+.pnf-heading {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #555; /* Medium dark text color */
+  margin-bottom: 2rem;
+}
+
+.pnf-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem; /* Adjust size as needed */
+  transition: background-color 0.3s ease;
+}
+
+.pnf-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/*==================================Contact Style===========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Contact Component Styles */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactus h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.contactus p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.contactus p:last-child {
+  margin-bottom: 0;
+}
+
+.contactus .col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus .col-md-6 img {
+  max-width: 100%; /* Ensure image stays within column */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.contactus .col-md-4 {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus .col-md-4 p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.contactus .col-md-4 p svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .contactus .col-md-6 {
+    order: 2; /* Rearrange image column on smaller screens */
+  }
+}
