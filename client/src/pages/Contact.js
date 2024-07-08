@@ -3,7 +3,7 @@ import Layout from "../components/Layouts/Layout";
 import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title={"Contact Us - Wristly"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img

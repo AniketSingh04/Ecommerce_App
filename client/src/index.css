@@ -257,3 +257,124 @@ font-family: "Oswald", sans-serif;
     order: 2; /* Rearrange image column on smaller screens */
   }
 }
+
+/*==================================Register Page===========================================*/
+
+.register {
+  max-width: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.register .form-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+}
+
+.register .form-control {
+  padding: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.register .btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.register .btn:hover {
+  background-color: #0056b3;
+}
+
+.register .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/*=================================Toaster===========================================*/
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.react-hot-toast {
+  animation: slideDown 1s ease-in-out;
+}
+
+/*=================================Login=============================================*/
+
+.login {
+  max-width: 300px;
+  margin: auto;
+  padding: 15px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.login .form-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+}
+
+.login .form-control {
+  padding: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.login .btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.login .btn:hover {
+  background-color: #0056b3;
+}
+
+.login .form-control:focus {
+  border-color: #5d98d6;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}

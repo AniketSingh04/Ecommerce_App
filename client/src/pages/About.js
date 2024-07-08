@@ -3,7 +3,7 @@ import Layout from "../components/Layouts/Layout";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout title={"About Us - Wristly"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
