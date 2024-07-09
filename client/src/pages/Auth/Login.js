@@ -3,10 +3,12 @@ import Layout from "../../components/Layouts/Layout";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [auth, setAuth] = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -18,11 +20,17 @@ const Login = () => {
       });
       if (res && res.data.success) {
         toast.success(res.data && res.data.message, {
-          duration: 6000, // Duration the toast is visible (in milliseconds)
+          duration: 4000, // Duration the toast is visible (in milliseconds)
           style: {
             animation: "slideDown 1s ease-in-out", // Custom transition time
           },
         });
+        setAuth({
+          ...auth,
+          user: res.data.user,
+          token: res.data.token,
+        });
+        localStorage.setItem("auth", JSON.stringify(res.data));
         navigate("/");
       } else {
         toast.error(res.data.message, {
