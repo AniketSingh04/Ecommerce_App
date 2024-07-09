@@ -4,29 +4,24 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Register = () => {
-  const [name, setName] = useState("");
+const ForgotPassword = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
+  const [newPassword, setNewPassword] = useState("");
   const [answer, setAnswer] = useState("");
+
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post(`/api/v1/auth/register`, {
-        name,
+      const res = await axios.post(`/api/v1/auth/forgot-password`, {
         email,
-        password,
-        phone,
-        address,
+        newPassword,
         answer,
       });
       if (res && res.data.success) {
         toast.success(res.data && res.data.message, {
-          duration: 6000, // Duration the toast is visible (in milliseconds)
+          duration: 4000, // Duration the toast is visible (in milliseconds)
           style: {
             animation: "slideDown 1s ease-in-out", // Custom transition time
           },
@@ -52,24 +47,10 @@ const Register = () => {
   };
 
   return (
-    <Layout title="Sign Up - Wristly">
-      <div className="register">
-        <h1>Sign Up </h1>
+    <Layout title={"Forgot Password - Wristly "}>
+      <div className="login">
+        <h1>Reset Password</h1>
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="exampleInputName " className="form-label">
-              Name
-            </label>
-            <input
-              type="text"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-              className="form-control"
-              id="exampleInputName"
-              required
-            />
-          </div>
-
           <div className="mb-3">
             <label htmlFor="exampleInputEmail " className="form-label">
               Email
@@ -86,12 +67,12 @@ const Register = () => {
 
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              Password
+              New Password
             </label>
             <input
               type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
+              value={newPassword}
+              onChange={(event) => setNewPassword(event.target.value)}
               className="form-control"
               id="exampleInputPassword1"
               required
@@ -99,35 +80,7 @@ const Register = () => {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="exampleInputName " className="form-label">
-              Phone
-            </label>
-            <input
-              type="text"
-              value={phone}
-              onChange={(event) => setPhone(event.target.value)}
-              className="form-control"
-              id="exampleInputName"
-              required
-            />
-          </div>
-
-          <div className="mb-3">
-            <label htmlFor="exampleInputName " className="form-label">
-              Address
-            </label>
-            <input
-              type="text"
-              value={address}
-              onChange={(event) => setAddress(event.target.value)}
-              className="form-control"
-              id="exampleInputName"
-              required
-            />
-          </div>
-
-          <div className="mb-3">
-            <label htmlFor="exampleInputName " className="form-label">
+            <label htmlFor="exampleInputEmail " className="form-label">
               Answer
             </label>
             <input
@@ -135,19 +88,21 @@ const Register = () => {
               value={answer}
               onChange={(event) => setAnswer(event.target.value)}
               className="form-control"
-              id="exampleInputName"
-              placeholder="What is your DOB?"
+              id="exampleInputAnswer"
+              placeholder="Enter your secret answer here"
               required
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
-            Create Account
-          </button>
+          <div className="mb-3">
+            <button type="submit" className="btn btn-primary">
+              RESET
+            </button>
+          </div>
         </form>
       </div>
     </Layout>
   );
 };
 
-export default Register;
+export default ForgotPassword;
