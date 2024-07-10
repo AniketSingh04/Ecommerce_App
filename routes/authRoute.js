@@ -23,10 +23,14 @@ router.post("/forgot-password", forgotPasswordController);
 //test route
 router.get("/test", requireSignIn, isAdmin, testController);
 
-//protected route
+//protected route - user
 router.get("/user-auth", requireSignIn, (req, res) => {
   res.status(200).send({ ok: true });
 });
 
+//protected route - admin
+router.get("/admin-auth", requireSignIn, isAdmin, (req, res) => {
+  res.status(200).send({ ok: true });
+});
 // Export the router object to be used in other parts of the application
 export default router;
