@@ -103,7 +103,7 @@ export const loginController = async (req, res) => {
 
     // Generate a JWT token with the user ID as the payload
     const token = await JWT.sign({ _id: user.id }, process.env.JWT_SECRET, {
-      expiresIn: "7d",
+      expiresIn: "1d",
     });
 
     // Send a successful response with user details and token
