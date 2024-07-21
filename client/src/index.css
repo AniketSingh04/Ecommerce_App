@@ -378,3 +378,35 @@ font-family: "Oswald", sans-serif;
   border-color: #5d98d6;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
 }
+
+/*=================================product-link(Product.js)===========================================*/
+.product-link {
+  text-decoration: none;
+  color: black !important;
+}
+
+.product-link .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.product-link .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-link .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.product-link .card-title:hover {
+  color: #4169E1;
+}
+
+.product-link .card-text {
+  color: #363333;
+  font-size: 0.9rem;
+}
