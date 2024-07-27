@@ -32,26 +32,29 @@ const Products = () => {
         </div>
         <div className="col-md-9">
           <h1 className="text-center">All Products List</h1>
-          <div className="d-flex">
-            {products?.map((p) => (
-              <Link
-                key={p._id}
-                to={`/dashboard/admin/product/${p.slug}`}
-                className="product-link"
-              >
-                <div className="card m-2" style={{ width: "18rem" }}>
-                  <img
-                    className="card-img-top"
-                    src={`/api/v1/product/product-photo/${p._id}`}
-                    alt={p.name}
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">{p.name}</h5>
-                    <p className="card-text">{p.description}</p>
-                  </div>
+          <div className="container">
+            <div className="row">
+              {products?.map((p, index) => (
+                <div className="col-md-4" key={p._id}>
+                  <Link
+                    to={`/dashboard/admin/product/${p.slug}`}
+                    className="product-link"
+                  >
+                    <div className="card m-2" style={{ width: "100%" }}>
+                      <img
+                        className="card-img-top"
+                        src={`/api/v1/product/product-photo/${p._id}`}
+                        alt={p.name}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{p.name}</h5>
+                        <p className="card-text">{p.description}</p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </Link>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
