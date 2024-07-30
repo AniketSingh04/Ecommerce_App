@@ -410,3 +410,82 @@ font-family: "Oswald", sans-serif;
   color: #363333;
   font-size: 0.9rem;
 }
+
+/*=================================ProductDetails.js - h5 tag===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.product-details-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.product-details img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-details img:hover {
+  transform: scale(1.05);
+}
+
+.product-details h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.product-details h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-details h5:hover {
+  color: #007BFF;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.detail, .product-details-title {
+  transition: color 0.3s ease;
+}
+
+.detail:hover, .product-details-title:hover {
+  color: #007bff;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
