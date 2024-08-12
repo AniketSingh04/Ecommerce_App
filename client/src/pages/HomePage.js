@@ -164,7 +164,6 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9">
-          {JSON.stringify(radio, null, 4)}
           <h1
             className="text-center"
             style={{
@@ -189,15 +188,17 @@ const HomePage = () => {
                   <h5 className="card-title">{p.name}</h5>
                   <p className="card-text">{p.description.substring(0, 40)}</p>
                   <p className="card-text">₹{p.price}</p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => navigate(`/product/${p.slug}`)}
-                  >
-                    More Details
-                  </button>
-                  <button className="btn btn-secondary ms-1">
-                    ADD TO CART
-                  </button>
+                  <div className="d-flex justify-content-between">
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => navigate(`/product/${p.slug}`)}
+                    >
+                      More Details
+                    </button>
+                    <button className="btn btn-secondary ms-1">
+                      ADD TO CART
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}

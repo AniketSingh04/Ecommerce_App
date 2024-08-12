@@ -1,0 +1,34 @@
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.card.custom-card {
+  flex: 0 0 28%; /* Adjust width to make the cards wider */
+  margin: 10px; /* Add space between cards */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+@media (max-width: 1200px) {
+  .card.custom-card {
+    flex: 0 0 32%; /* Adjust for slightly smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .card.custom-card {
+    flex: 0 0 48%; /* Adjust for tablets or larger phones */
+  }
+}
+
+@media (max-width: 576px) {
+  .card.custom-card {
+    flex: 0 0 100%; /* Full width for mobile screens */
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Adjusts the spacing between buttons */
+}
