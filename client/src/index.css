@@ -489,3 +489,45 @@ font-family: "Oswald", sans-serif;
   background-color: #218838;
   border-color: #1e7e34;
 }
+
+/*------------------------Dropdown-Category in Header.js-----------------------------------------------------------*/
+/* Add this to your CSS file */
+.dropdown-menu {
+  max-height: 150px; /* Set your desired max height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+/* Optional: Add a custom scrollbar style */
+.dropdown-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #d7daf6; /* Customize scrollbar color */
+  border-radius: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/*-----------------------Dropdown-Category in Header.js-----------------------------------------------------------*/
+/* Add this to your CSS file */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background-color: rgb(61, 163, 61);
+  border-color: rgb(25, 141, 25);
+}
+
+.btn-secondary:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
